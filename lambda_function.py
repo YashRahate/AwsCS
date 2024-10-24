@@ -13,6 +13,8 @@ def lambda_handler(event, context):
     # Process the image (log details in this case)
     response = s3.get_object(Bucket=bucket, Key=key)
     print(f"Processing file {key} from bucket {bucket}")
+    print("I am Yash Rahate")
+
 
     # New print statement for verification
     print(f"Lambda function updated! Now processing {key} from {bucket}.")
